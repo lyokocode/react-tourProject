@@ -1,5 +1,14 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +16,167 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+button {
+  cursor: pointer;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+.underline {
+  margin: 10px auto 10px auto;
+  height: 3px;
+  width: 100px;
+  background-color: rgb(49, 49, 242);
+  opacity: 0.7;
+
+}
+
+.loading {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 32px;
+  background-color: rgb(145, 145, 188);
+}
+
+section {
+  width: 70%;
+  margin: auto;
+}
+
+article {
+  width: 90%;
+  height: 100%;
+  margin: 30px auto;
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin: 30px 0;
+}
+
+.tourInfo {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+footer {
+  padding: 30px 20px;
+}
+
+footer p {
+  padding: 15px;
+}
+
+footer .deleteBtn {
+  width: 50%;
+  height: 40px;
+  color: red;
+  border: 2px solid red;
+  text-align: center;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.noTours {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 32px;
+  height: 100vh;
+}
+
+.noTours button {
+  width: 250px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid red;
+  color: red;
+  font-size: 20px;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 1700px) {
+  section {
+    width: 50%;
+  }
+
+  article {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section {
+    width: 60%;
+  }
+
+  article {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  section {
+    width: 60%;
+  }
+
+  article {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  section {
+    width: 75%;
+  }
+
+  article {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section {
+    width: 80%;
+  }
+
+  article {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  section {
+    width: 95%;
+  }
+
+  article {
+    width: 90%;
+  }
 }
