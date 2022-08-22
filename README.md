@@ -1,5 +1,6 @@
-# AELİTA
+# Aelita
 
-React tour project
+## React Project
 
-## React 
+### demo
+https://aelita-tour.netlify.app
