@@ -4,7 +4,7 @@ import Loading from './components/Loading';
 import Tours from './components/Tours';
 
 function App() {
-  const url = "http://localhost:3000/tours"
+  const url = "https://6302e5589eb72a839d754429.mockapi.io/tour"
   const [loading, setLoading] = useState(true)
   const [tours, setTours] = useState([])
 
